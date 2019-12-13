@@ -74,3 +74,14 @@ script:
 
 これだけで，ビルド自体は完了するようだ．
 
+```bash
+# tests/mytest.sh
+docker image list
+exit 0
+
+```
+
+
+
+docker コマンド系が使える
+
