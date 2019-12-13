@@ -45,7 +45,28 @@
 
 2. curlで以下のものを送る
 
+
+
+
+
+
 ## docker build
 
 https://docs.travis-ci.com/user/docker/
+
+
+
+```yaml
+language: bash
+
+services:
+  - docker
+
+before_install:
+  - docker build -t nogayama/testimg:latest .
+
+script:
+  - tests/mytest.sh
+
+```
 
